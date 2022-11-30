@@ -1,19 +1,10 @@
+
+
 body{
   margin: 0;
   padding: 0;
-}
+  scroll-behavior: smooth;
 
-.slide{
-  background: rgb(9, 9, 9);
-  /* background: #28324D; */
-  width: 100vw;
-  height: 100vh;
-  border: 2px solid red;   /* Debugging tool */
-  color: whitesmoke;
-}
-
-.modaltest{
-  transform: rotate(90deg) translateY(-100vh);
 }
 
 .wrapper{
@@ -23,22 +14,6 @@ body{
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 } 
-
-.one{
-  /* slide one style */
-}
-
-.two{
-  /* slide two style */
-}
-
-.three{
-  /* slide three style */
-}
-
-.four{
-  /* slide four style */
-}
 
 .outer-wrapper {
   width: 100vh;
@@ -56,34 +31,30 @@ body{
   display: none;
 }
 
-/* TODO: Make navbarItem font  */
-.navbar{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 1vw 1vw;
+/* SLIDES */
+.slide{
+  /* background: whitesmoke; */
+  background: rgb(9, 9, 9);
+  /* background: #28324D; */
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid red;   /* Debugging tool */
+  color: whitesmoke;
 }
 
-.navbarItem{
-  margin: 0px 20px;
-  color: white;
-  text-decoration: none;
-  user-select: none;
-  font-size: 1.6vw;
+/* ONE / HOME */
+.one{
+  position: relative;
 }
 
-.navbarItem:hover{
-  margin: 0px 20px;
-  color: grey;
-  text-decoration: none;
+.thumbnail1{
+  position: absolute;
+  z-index: 1000;
 }
 
 .nameTitleFirstPage{
-  width:100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50vh;
   font-size: 9vw;
   font-family: eloquent-jf-pro;
 }
@@ -91,10 +62,22 @@ body{
 
 
 
+.two{
+  /* slide two style */
+}
+
+.three{
+  /* slide three style */
+}
+
+.four{
+  /* slide four style */
+}
 
 
 
 /* PROJECT MODAL PAGE STYLING */
+
 .projectPageWrapper{
   float:left;
   width:100vw;
@@ -106,14 +89,58 @@ body{
 .leftColumn{
   width:50vw;
   height: 100vh;
-  background: black;
+  /* background: black; */
 }
 
 .rightColumn{
+  position: fixed;
   display: flex;
+  top: 0;
   width:50vw;
+  flex-direction: column;
+  margin-left:60vw;
+}
+
+.textBoxTitle{
+  width:50vw;
+  display: flex;
   margin-top: 20vh;
-  justify-content: center;
+  justify-content: left;
   font-family: eloquent-jf-pro;
   font-size: 6vw;
+}
+
+.textBox{
+  width:35vw;
+  display: flex;
+  justify-content: center;
+  font-family: demos-next-condensed;
+  font-size: 23px;
+  margin: 0px 4vw;
+}
+
+
+/* TODO: Make navbarItem font  */
+/* NAV */
+.navbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 4vh 2vw;
+}
+
+.navbarItem{
+  margin: 0px 20px;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+  font-size: 23px;
+  /* text-shadow: 1px 1px 8px #000000; */
+  font-family: 'Kanit', sans-serif;
+}
+
+.navbarItem:hover{
+  margin: 0px 20px;
+  color: grey;
+  text-decoration: none;
 }
