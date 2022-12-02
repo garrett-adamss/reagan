@@ -1,24 +1,37 @@
 // Parallax Scroll ID's
 let thumbnail = document.getElementById('thumbnail')
+let title = document.getElementById('title')
 
-//Mobile var
+//Mobile Var
 let mobileWidth = window.innerWidth
 
-//Parallax Scroll if statement
-if(mobileWidth >= 768){ //Mobile check
+let outerWrapper = document.querySelector(".outer-wrapper");
 
-  window.addEventListener('wheel', function(){
-    let scroll = window.scrollY; //px
-    // console.log('[horizontal]', horizontal)
+//Parallax Scroll Function
+// @ts-ignore
+outerWrapper.onscroll = function() {
+  // @ts-ignore
+  let widthValue = (100 *(outerWrapper?.scrollTop) / window.innerWidth)
+  console.log("[widthValue vw] : ", widthValue);
 
-    let viewValue = (100 * (window.scrollY)) / window.innerHeight; // base value
+  // @ts-ignore
+  thumbnail.style.left = ((widthValue * .1) + 80 )+ 'vw';
 
-    console.log("[window.scrollY] :", window.scrollY ,`
-    [window.innerHeight] :`, window.innerHeight, `
-    [viewValue in vh] :`,  viewValue)
- 
-    //TEST
-    // if(view)
+ // @ts-ignore
+  if(widthValue <= 83.6){
+    // @ts-ignore
+    title.style.left = (widthValue) + 'vw'
+    // @ts-ignore                                   BOSS THAT LOOKS FIRE GOING GREAT.
+    title.style.opacity = 1 - (widthValue * 0.012)
+  } else {
+  // @ts-ignore
+  title.style.left = ((widthValue * .1)+ 75) + 'vw';
+  }
 
-  })
+
+  
+
+
+
+
 }

@@ -8,7 +8,7 @@ body{
 .wrapper{
   display: flex;
   flex-direction: row;
- width: 400vw;   /*needs to equal the width of the content or all slides combined   */
+  width: 1000vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 } 
@@ -34,51 +34,75 @@ body{
   /* background: whitesmoke; */
   background: rgb(9, 9, 9);
   /* background: #28324D; */
-  width: 100vw;
+  width: 200vw;
   height: 100vh;
-  border: 2px solid red;   /* Debugging tool */
+  border: 2px solid red;   /*Debugging tool*/
   color: whitesmoke;
-}
-
-/* ONE / HOME */
-.one{
   position: relative;
 }
 
+.testbox{
+  width: 30vw;
+  opacity: 0.7;
+}
+
+/* ONE / HOME */
 .thumbnail1{
   position: absolute;
   z-index: 1000;
-  width: 30vw;
-  margin: 0px auto;
+  width: 80vw;
+  top: 10vh;
+  left: 80vw;
+  opacity: 1;
 }
 
 .nameTitleFirstPage{
   position: absolute;
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  top: 41vh;
   font-size: 9vw;
   font-family: eloquent-jf-pro;
 }
 
-
-
-
-.two{
-  /* slide two style */
+.aboutMe{
+  position: absolute;
+  top: 30vh;
 }
 
-.three{
-  /* slide three style */
+.projectOne{
+  position: absolute;
+  top: 30vh;
+  left: 50vw;
 }
 
-.four{
-  /* slide four style */
+.projectTwo{
+  position: absolute;
+  top: 30vh;
+  left: 70vw;
 }
 
+.projectThree{
+  
+}
 
+.projectFour{
+  
+}
+
+.projectFive{
+  
+}
+
+.projectSix{
+  
+}
+
+.projectSeven{
+  
+}
+
+.contact{
+  
+}
 
 /* PROJECT MODAL PAGE STYLING */
 
