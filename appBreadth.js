@@ -6,9 +6,9 @@ let photos = document.querySelectorAll('.photoInGrid');
 
 photos.forEach(photo => {
   photo.addEventListener('click', function handleClick(event) {
-    console.log('box clicked', event);
 
     alert(photo.getAttribute('src'));
+    popup.style.visibility = visible;
     
   });
 });
