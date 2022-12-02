@@ -9,6 +9,6 @@ photos.forEach(photo => {
     console.log('box clicked', event);
 
     alert(photo.getAttribute('src'));
-    visibility = "visible";
+    
   });
 });
