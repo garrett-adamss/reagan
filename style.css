@@ -44,9 +44,15 @@ body{
 .testbox{
   width: 30vw;
   opacity: 0.7;
+  transition: transform 250ms;
 }
 
-/* ONE / HOME */
+.testbox:hover{
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+/* SLIDE ONE */
 .thumbnail1{
   position: absolute;
   z-index: 1000;
@@ -57,12 +63,13 @@ body{
 }
 
 .nameTitleFirstPage{
+  margin-left: 6vw;
   position: absolute;
   top: 41vh;
   font-size: 9vw;
   font-family: eloquent-jf-pro;
 }
-
+/* SLIDE TWO */
 .aboutMe{
   position: absolute;
   top: 30vh;
@@ -70,38 +77,49 @@ body{
 
 .projectOne{
   position: absolute;
-  top: 30vh;
+  top: 22vh;
   left: 50vw;
 }
 
 .projectTwo{
   position: absolute;
   top: 30vh;
-  left: 70vw;
+  left: 100vw;
 }
 
 .projectThree{
-  
+  position: absolute;
+  top: 22vh;
+  left: 150vw;
 }
 
 .projectFour{
-  
+  position: absolute;
+  top: 30vh;
+  left: 175vw;
 }
 
 .projectFive{
-  
+  position: absolute;
+  top: 22vh;
+  left: 200vw;
 }
-
+/* SLIDE THREE */
 .projectSix{
-  
+  position: absolute;
+  top: 30vh;
+  /* left: 100vw; */
 }
 
 .projectSeven{
-  
+  position: absolute;
+  top: 22vh;
+  /* left: 150vw; */
 }
 
 .contact{
-  
+  position: absolute;
+  top: 30vh;
 }
 
 /* PROJECT MODAL PAGE STYLING */
@@ -171,4 +189,64 @@ body{
   margin: 0px 20px;
   color: grey;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .testbox{
+    width: 50vw;
+    opacity: 0.7;
+  }
+  .aboutMe{
+    position: absolute;
+    top: 50vh;
+  }
+  
+  .projectOne{
+    position: absolute;
+    top:15vh;
+    left: 50vw;
+  }
+  
+  .projectTwo{
+    position: absolute;
+    top: 45vh;
+    left: 100vw;
+  }
+  
+  .projectThree{
+    position: absolute;
+    top: 15vh;
+    left: 150vw;
+  }
+  
+  .projectFour{
+    position: absolute;
+    top: 50vh;
+    left: 175vw;
+  }
+  
+  .projectFive{
+    position: absolute;
+    top: 18vh;
+    left: 200vw;
+  }
+  /* SLIDE THREE */
+  .projectSix{
+    position: absolute;
+    top: 47vh;
+    /* left: 100vw; */
+  }
+  
+  .projectSeven{
+    position: absolute;
+    top: 26vh;
+    /* left: 150vw; */
+  }
+  
+  .contact{
+    position: absolute;
+    top: 50vh;
+  }
+
 }
