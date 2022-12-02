@@ -8,7 +8,7 @@ body{
 .wrapper{
   display: flex;
   flex-direction: row;
-  width: 1000vw;   /*needs to equal the width of the content or all slides combined   */
+  width: 501vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 } 
@@ -31,15 +31,15 @@ body{
 
 /* SLIDES */
 .slide{
-  /* background: whitesmoke; */
   background: rgb(9, 9, 9);
   /* background: #28324D; */
-  width: 200vw;
+  width: 167vw;
   height: 100vh;
   border: 2px solid red;   /*Debugging tool*/
   color: whitesmoke;
   position: relative;
 }
+
 
 .testbox{
   width: 30vw;

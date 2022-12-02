@@ -33,7 +33,7 @@ outerWrapper.onscroll = function() {
     // @ts-ignore
     title.style.left = (widthValue) + 'vw'
     // @ts-ignore                                   BOSS THAT LOOKS FIRE GOING GREAT.
-    title.style.opacity = 1 - (widthValue * 0.013)
+    title.style.opacity = 1 - (widthValue * 0.014)
   } else {
   // @ts-ignore
   title.style.left = ((widthValue * .1)+ 75) + 'vw';
@@ -53,9 +53,17 @@ outerWrapper.onscroll = function() {
     projectThree.style.left = (-(widthValue * .15) + 150) + 'vw';
     // @ts-ignore
     projectFour.style.left = (-(widthValue * .3) + 230) + 'vw';
+  }
+    //Slide Two
+  if (widthValue >= 250){
     // @ts-ignore
-    projectFive.style.left = (-(widthValue * .15) + 215) + 'vw';
-  
+    projectFive.style.left = (-(widthValue * .15) + 16) + 'vw';
+    // @ts-ignore
+    projectSix.style.left = (-(widthValue * .3) + 95) + 'vw';
+    // @ts-ignore
+    projectSeven.style.left =  (-(widthValue * .15) + 75) + 'vw';
+    // @ts-ignore
+    contact.style.left =  (-(widthValue * .3) + 170) + 'vw';
   }
 
 }
