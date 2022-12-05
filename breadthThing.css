@@ -50,7 +50,7 @@ body{
 
 
 #popup{
-  visibility: hidden;
+  visibility: visible;
   background-color: black;
 }
 
