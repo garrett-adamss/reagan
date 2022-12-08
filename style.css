@@ -1,3 +1,11 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'title-font';
+  font-style: normal;
+  src: url("longshotfeatures.com/api/fonts/5d4d72e17aefeb00a34776f9/n4/woff?domain=longshotfeatures.com&md5=-Lxw48bJ8Lzw2EQtDHkCDQ") format('woff');
+}
+
+
 body{
   margin: 0;
   padding: 0;
@@ -8,7 +16,7 @@ body{
 .wrapper{
   display: flex;
   flex-direction: row;
-  width: 423vw;   /*needs to equal the width of the content or all slides combined   */
+  width: 379vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 } 
@@ -35,16 +43,16 @@ body{
   /* background: #28324D; */
   width: 167vw;
   height: 100vh;
-  border: 2px solid red;   /*Debugging tool*/
+  /* border: 2px solid red;   Debugging tool */
   color: whitesmoke;
   position: relative;
 }
 .slide3{
   background: rgb(9, 9, 9);
   /* background: #28324D; */
-  width: 89vw;
+  width: 45vw;
   height: 100vh;
-  border: 2px solid red;   /*Debugging tool*/
+  /* border: 2px solid red;   Debugging tool */
   color: whitesmoke;
   position: relative;
 }
@@ -54,8 +62,7 @@ body{
 }
 
 .selectable:hover{
-  transform
-  : translateY(-10px);
+  transform: translateY(-10px);
   cursor: pointer;
 }
 
@@ -74,7 +81,7 @@ body{
   position: absolute;
   top: 10vh;
   font-size: 17vw;
-  font-family: eloquent-jf-pro;
+  font-family: title-font;
 }
 /* SLIDE TWO */
 .projectZero{
@@ -163,16 +170,7 @@ body{
   height: 80vh;
 }
 
-.contact{
-  position: absolute;
-  top: 30vh;
-}
 
-.contactText{
-  font-size: 20vh;
-  font-family: eloquent-jf-pro;
-  font-style: italic;
-}
 
 /* PROJECT MODAL PAGE STYLING */
 
@@ -243,6 +241,24 @@ body{
   text-decoration: none;
 }
 
+.watermark{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  font-weight: 400;
+  top: 100px;
+  transition: transform 250ms;
+}
+
+.watermark:hover{
+  background-color: rgb(198, 198, 198);
+  color: black;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 900px) {
 
   .testbox{
@@ -262,7 +278,8 @@ body{
   
   .projectTwo{
     position: absolute;
-    top: 45vh;
+    top: 0vh;
+    bottom: 0vh;
     left: 100vw;
   }
   
@@ -274,7 +291,8 @@ body{
   
   .projectFour{
     position: absolute;
-    top: 50vh;
+    top: 0vh;
+    bottom: 0vh;
     left: 175vw;
   }
   
