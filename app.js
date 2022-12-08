@@ -56,11 +56,11 @@ outerWrapper.onscroll = function() {
     //Slide Two
   if (widthValue >= 175){
     // @ts-ignore
-    projectFive.style.left = (-(widthValue * .3)- 5) + 'vw';
+    projectFive.style.left = (-(widthValue * .3)- 20) + 'vw';
     // @ts-ignore
-    projectSix.style.left = (-(widthValue * .15)+ 5) + 'vw';
+    projectSix.style.left = (-(widthValue * .15)+ 10) + 'vw';
     // @ts-ignore
-    projectSeven.style.left =  (-(widthValue * .3) + 85) + 'vw';
+    projectSeven.style.left =  (-(widthValue * .3) + 90) + 'vw';
   }
 
 }

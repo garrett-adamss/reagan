@@ -9,6 +9,7 @@ photos.forEach(photo => {
 
     // alert(photo.getAttribute('src'));
     // alert(popup.style);
+    // @ts-ignore
     console.log(popup.style);
     // popup.style.visibility = 'visible';
     

@@ -10,6 +10,7 @@ body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background-color: black;
 
 }
 
@@ -78,9 +79,10 @@ body{
 }
 
 .nameTitleFirstPage{
+  line-height: 1;
   margin-left: 6vw;
   position: absolute;
-  top: 10vh;
+  top: 23vh;
   font-size: 17vw;
   font-family: eloquent-jf-pro;
 }
@@ -147,7 +149,7 @@ body{
 }
 
 .gif5{
-  width: 53vw;
+  width: 73vw;
 
 }
 
@@ -242,6 +244,22 @@ body{
   text-decoration: none;
 }
 
+/* .watermark{
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  transform: rotate(-90deg);
+  top: 46vh;
+  right: -3vw;
+  font-size: 35px;
+}
+
+.watermark:hover{
+  cursor: grab;
+  background-color: rgb(174, 174, 174);
+  color: black;
+} */
+
 @media only screen and (max-width: 900px) {
 
   .testbox{
@@ -281,7 +299,7 @@ body{
   
   .projectFive{
     position: absolute;
-    top: 18vh;
+    bottom: 0vh;
     left: 200vw;
   }
   /* SLIDE THREE */
