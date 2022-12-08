@@ -26,7 +26,7 @@ outerWrapper.onscroll = function() {
   console.log("[widthValue vw] : ", widthValue);
 
   // @ts-ignore
-  aboutMe.style.left = ((widthValue * .1) + 80 )+ 'vw';
+  aboutMe.style.left = (-(widthValue * .3) + 70 )+ 'vw';
 
  // @ts-ignore
   if(widthValue <= 83.6){
@@ -42,28 +42,28 @@ outerWrapper.onscroll = function() {
   //!SECTION PROJECTS
 
     //Slide One
-  if(widthValue >= 100){
+  
       // @ts-ignore
-    projectZero.style.left = (-(widthValue * .3) + 70) + 'vw';
+    projectZero.style.left = (-(widthValue * .1)- 76 ) + 'vw';
     // @ts-ignore
-    projectOne.style.left = (-(widthValue * .15) + 75 ) + 'vw';
+    projectOne.style.left = (-(widthValue * .3) - 51 ) + 'vw';
     // @ts-ignore
-    projectTwo.style.left = (-(widthValue * .35) + 158) + 'vw';
+    projectTwo.style.left = (-(widthValue * .15) - 40) + 'vw';
     // @ts-ignore
-    projectThree.style.left = (-(widthValue * .15) + 150) + 'vw';
+    projectThree.style.left = (-(widthValue * .3)+ 55) + 'vw';
     // @ts-ignore
-    projectFour.style.left = (-(widthValue * .3) + 230) + 'vw';
-  }
+    projectFour.style.left = (-(widthValue * .15) + 57) + 'vw';
+
     //Slide Two
-  if (widthValue >= 250){
+  if (widthValue >= 175){
     // @ts-ignore
-    projectFive.style.left = (-(widthValue * .15) + 16) + 'vw';
+    projectFive.style.left = (-(widthValue * .3)- 5) + 'vw';
     // @ts-ignore
-    projectSix.style.left = (-(widthValue * .3) + 95) + 'vw';
+    projectSix.style.left = (-(widthValue * .15)+ 5) + 'vw';
     // @ts-ignore
-    projectSeven.style.left =  (-(widthValue * .15) + 75) + 'vw';
+    projectSeven.style.left =  (-(widthValue * .3) + 85) + 'vw';
     // @ts-ignore
-    contact.style.left =  (-(widthValue * .3) + 170) + 'vw';
+    contact.style.left =  (-(widthValue * .15)+ 60) + 'vw';
   }
 
 }

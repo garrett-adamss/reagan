@@ -8,7 +8,7 @@ body{
 .wrapper{
   display: flex;
   flex-direction: row;
-  width: 501vw;   /*needs to equal the width of the content or all slides combined   */
+  width: 423vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 } 
@@ -39,112 +39,128 @@ body{
   color: whitesmoke;
   position: relative;
 }
+.slide3{
+  background: rgb(9, 9, 9);
+  /* background: #28324D; */
+  width: 89vw;
+  height: 100vh;
+  border: 2px solid red;   /*Debugging tool*/
+  color: whitesmoke;
+  position: relative;
+}
 
-.gif{
-  width: 45vw;
-  opacity: 0.7;
+.selectable{
   transition: transform 250ms;
 }
 
-.gif:hover{
-  transform: translateY(-4px);
+.selectable:hover{
+  transform
+  : translateY(-10px);
   cursor: pointer;
 }
 
 /* SLIDE ONE */
 .aboutMe{
   position: absolute;
-  z-index: 1000;
-  width: 70vw;
-  top: 10vh;
-  left: 80vw;
+  z-index: 500;
+  width: 26vw;
+  bottom: 0px;
+  left: 70vw;
   opacity: 1;
 }
 
 .nameTitleFirstPage{
   margin-left: 6vw;
   position: absolute;
-  top: 41vh;
-  font-size: 9vw;
+  top: 10vh;
+  font-size: 17vw;
   font-family: eloquent-jf-pro;
 }
 /* SLIDE TWO */
 .projectZero{
   position: absolute;
-  top: 30vh;
+  top: 2vh;
+  left: -76vw;
+  z-index: 1000;
 }
 
 .gif0{
+  width: 17vw;
 }
 
 .projectOne{
   position: absolute;
-  top: 22vh;
-  left: 50vw;
+  bottom: -35vh;
+  z-index: 10000;
 }
 
 .gif1{
+  width: 70vw;
 }
 
 .projectTwo{
   position: absolute;
-  top: 30vh;
-  left: 100vw;
+  top: -40vh;
 }
 
 .gif2{
+  width: 90vw;
 
 }
 
 .projectThree{
   position: absolute;
   top: 22vh;
-  left: 150vw;
+  z-index: 10000;
 }
 
 .gif3{
+  width: 40vw;
 
 }
 
 .projectFour{
   position: absolute;
-  top: 30vh;
+  top: 0;
+  bottom: 0;
   left: 175vw;
 }
 
 .gif4{
+  height: 80vh;
 
 }
 
 .projectFive{
   position: absolute;
-  top: 22vh;
+  bottom: 0vw;
   left: 200vw;
+  z-index: 10000;
 }
 
 .gif5{
+  width: 53vw;
 
 }
 
 /* SLIDE THREE */
 .projectSix{
   position: absolute;
-  top: 30vh;
-  /* left: 100vw; */
+  top: 2vh;
 }
 
 .gif6{
+  width: 40vw;
 
 }
 
 .projectSeven{
   position: absolute;
-  top: 22vh;
-  /* left: 150vw; */
+  bottom: 2vh;
 }
 
 .gif7{
-
+  height: 80vh;
 }
 
 .contact{
@@ -152,8 +168,10 @@ body{
   top: 30vh;
 }
 
-.gif8{
-
+.contactText{
+  font-size: 20vh;
+  font-family: eloquent-jf-pro;
+  font-style: italic;
 }
 
 /* PROJECT MODAL PAGE STYLING */
@@ -206,7 +224,7 @@ body{
   position: fixed;
   bottom: 0;
   left: 0;
-  margin: 4vh 2vw;
+  margin-bottom: 2vh;
 }
 
 .navbarItem{
@@ -214,7 +232,7 @@ body{
   color: white;
   text-decoration: none;
   user-select: none;
-  font-size: 23px;
+  font-size: 2.3vh;
   /* text-shadow: 1px 1px 8px #000000; */
   font-family: 'Kanit', sans-serif;
 }
