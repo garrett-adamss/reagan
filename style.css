@@ -244,6 +244,23 @@ body{
   text-decoration: none;
 }
 
+#login {
+  padding-top: 300px;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  background: rgba(226, 226, 226, 0.94);
+  position: absolute;
+  z-index: 10000;
+  text-align: center;
+}
+#login #pswd {
+  margin: 30px auto;
+  text-align: center;
+  width: 300px;
+  background: #fff;
+}
+
 /* .watermark{
   position: absolute;
   text-decoration: none;
