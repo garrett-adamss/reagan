@@ -10,7 +10,6 @@ let projectFour = document.getElementById('project-four')
 let projectFive = document.getElementById('project-five')
 let projectSix = document.getElementById('project-six')
 let projectSeven = document.getElementById('project-seven')
-let contact = document.getElementById('contact')
 
 
 //Mobile Var
@@ -62,8 +61,6 @@ outerWrapper.onscroll = function() {
     projectSix.style.left = (-(widthValue * .15)+ 5) + 'vw';
     // @ts-ignore
     projectSeven.style.left =  (-(widthValue * .3) + 85) + 'vw';
-    // @ts-ignore
-    contact.style.left =  (-(widthValue * .15)+ 60) + 'vw';
   }
 
 }
