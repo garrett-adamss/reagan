@@ -1,8 +1,8 @@
 // Parallax Scroll ID's
-let thumbnail = document.getElementById('thumbnail')
+let aboutMe = document.getElementById('about-me')
 let title = document.getElementById('title')
 
-let aboutMe = document.getElementById('about-me')
+let projectZero = document.getElementById('project-zero')
 let projectOne = document.getElementById('project-one')
 let projectTwo = document.getElementById('project-two')
 let projectThree = document.getElementById('project-three')
@@ -26,7 +26,7 @@ outerWrapper.onscroll = function() {
   console.log("[widthValue vw] : ", widthValue);
 
   // @ts-ignore
-  thumbnail.style.left = ((widthValue * .1) + 80 )+ 'vw';
+  aboutMe.style.left = ((widthValue * .1) + 80 )+ 'vw';
 
  // @ts-ignore
   if(widthValue <= 83.6){
@@ -44,7 +44,7 @@ outerWrapper.onscroll = function() {
     //Slide One
   if(widthValue >= 100){
       // @ts-ignore
-    aboutMe.style.left = (-(widthValue * .3) + 70) + 'vw';
+    projectZero.style.left = (-(widthValue * .3) + 70) + 'vw';
     // @ts-ignore
     projectOne.style.left = (-(widthValue * .15) + 75 ) + 'vw';
     // @ts-ignore

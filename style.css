@@ -40,23 +40,22 @@ body{
   position: relative;
 }
 
-
-.testbox{
-  width: 30vw;
+.gif{
+  width: 45vw;
   opacity: 0.7;
   transition: transform 250ms;
 }
 
-.testbox:hover{
+.gif:hover{
   transform: translateY(-4px);
   cursor: pointer;
 }
 
 /* SLIDE ONE */
-.thumbnail1{
+.aboutMe{
   position: absolute;
   z-index: 1000;
-  width: 80vw;
+  width: 70vw;
   top: 10vh;
   left: 80vw;
   opacity: 1;
@@ -70,9 +69,12 @@ body{
   font-family: eloquent-jf-pro;
 }
 /* SLIDE TWO */
-.aboutMe{
+.projectZero{
   position: absolute;
   top: 30vh;
+}
+
+.gif0{
 }
 
 .projectOne{
@@ -81,10 +83,17 @@ body{
   left: 50vw;
 }
 
+.gif1{
+}
+
 .projectTwo{
   position: absolute;
   top: 30vh;
   left: 100vw;
+}
+
+.gif2{
+
 }
 
 .projectThree{
@@ -93,10 +102,18 @@ body{
   left: 150vw;
 }
 
+.gif3{
+
+}
+
 .projectFour{
   position: absolute;
   top: 30vh;
   left: 175vw;
+}
+
+.gif4{
+
 }
 
 .projectFive{
@@ -104,11 +121,20 @@ body{
   top: 22vh;
   left: 200vw;
 }
+
+.gif5{
+
+}
+
 /* SLIDE THREE */
 .projectSix{
   position: absolute;
   top: 30vh;
   /* left: 100vw; */
+}
+
+.gif6{
+
 }
 
 .projectSeven{
@@ -117,9 +143,17 @@ body{
   /* left: 150vw; */
 }
 
+.gif7{
+
+}
+
 .contact{
   position: absolute;
   top: 30vh;
+}
+
+.gif8{
+
 }
 
 /* PROJECT MODAL PAGE STYLING */
