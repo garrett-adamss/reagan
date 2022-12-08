@@ -62,7 +62,8 @@ body{
 }
 
 .selectable:hover{
-  transform: translateY(-10px);
+  transform
+  : translateY(-10px);
   cursor: pointer;
 }
 
@@ -81,7 +82,7 @@ body{
   position: absolute;
   top: 10vh;
   font-size: 17vw;
-  font-family: title-font;
+  font-family: eloquent-jf-pro;
 }
 /* SLIDE TWO */
 .projectZero{
@@ -240,24 +241,6 @@ body{
   color: grey;
   text-decoration: none;
 }
-
-.watermark{
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  transform: rotate(-90deg);
-  font-size: 30px;
-  font-weight: 400;
-  top: 100px;
-  transition: transform 250ms;
-}
-
-.watermark:hover{
-  background-color: rgb(198, 198, 198);
-  color: black;
-  cursor: pointer;
-}
-
 
 @media only screen and (max-width: 900px) {
 
