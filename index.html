@@ -27,7 +27,7 @@
   <!-- https://getbootstrap.com/docs/5.2/components/modal/#how-it-works  -->
 
 
-    <body onload="onLoad()">
+  <body onload="onLoad()">
     <!--<img src="https://thiscatdoesnotexist.com">-->
     <!-- https://www.ledr.com/colours/white.jpg -->
 
@@ -36,13 +36,13 @@
     <!-- MAIN -->
 
     <script type="text/javascript">
-      function onLoad(){
-        
+      function onLoad() {
+
         if (!sessionStorage.getItem("runOnce")) {
-            $("#login").css("visibility", "visible");
+          $("#login").css("visibility", "visible");
         }
       }
-      
+
       function checkPswd() {
         var confirmPassword = "say cheese";
         var password = document.getElementById("pswd").value;
@@ -53,20 +53,19 @@
           sessionStorage.setItem("runOnce", true);
         }
         else {
-        else {
           alert("Password invalid");
         }
       }
     </script>
-  <div id="login">
-    <form>
-      <label for="pswd">Enter your password: </label><br>
+    <div id="login">
+      <form>
+        <label for="pswd">Enter your password: </label><br>
         <div>
           <input type="password" id="pswd" autofocus>
-          <button onclick="checkPswd();" >Submit</button>
+          <button onclick="checkPswd();">Submit</button>
         </div>
-    </form>
-  </div>
+      </form>
+    </div>
 
     <div class="outer-wrapper">
       <div class="wrapper">
