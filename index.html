@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300;1,400;1,500&display=swap"
       rel="stylesheet">
-
+    <link rel="stylesheet" href="animate.css">
 
     <title>Reagan</title>
   </head>
@@ -34,11 +34,32 @@
     <!-- position = project -->
     <!-- size =     gifX -->
     <!-- MAIN -->
+    <script type="text/javascript">
+      function checkPswd() {
+        var confirmPassword = "test";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+          $("#login").css("display", "none");
+        }
+        else{
+          alert("Password invalid");
+        }
+      }
+    </script>
+    <div id="login">
+      <form>
+        <label for="pswd">Enter your password: </label><br>
+        <div>
+          <input type="password" id="pswd">
+          <input type="button" value="Submit" class="submitButton" onclick="checkPswd();" />
+        </div>
+      </form>
+    </div>
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide" id="Home">
           <p id="title" class="nameTitleFirstPage">REAGAN <br> SWEAT</p>
-          <a href="/about-me.html">
+          <a href="./about-me.html">
             <img id="about-me" class="aboutMe selectable" src="graphics/1-about-me-faster.gif">
           </a>
         </div>
@@ -48,39 +69,39 @@
               <img class="gif0 selectable" src="graphics/2-Adlab-Projects-Graphic-Final-Gif.gif">
           </div>
           <div class="projectOne" id="project-one">
-            <a href="/print-campaign.html">
+            <a href="./print-campaign.html">
               <img class="gif1 selectable" src="graphics/3-NYPL-Graphic-frfixed.gif">
             </a>
           </div>
           <div class="projectTwo" id="project-two">
-            <a href="/360-campaign.html">
+            <a href="./360-campaign.html">
               <img class="gif2 selectable" src="graphics/4-paqui-animation.gif">
             </a>
           </div>
           <div class="projectThree" id="project-three">
-            <a href="/produced-media-element.html">
+            <a href="./produced-media-element.html">
               <img class="gif3 selectable" src="graphics/5-iran-animation.gif">
             </a>
           </div>
           <div class="projectFour" id="project-four">
-            <a href="/one-off.html">
+            <a href="./one-off.html">
               <img class="gif4 selectable" src="graphics/6-asdfasdfasdf.gif">
             </a>
           </div>
         </div>
         <div class="slide3">
           <div class="projectFive" id="project-five">
-            <a href="/best-of-330.html">
+            <a href="./best-of-330.html">
               <img class="gif5 selectable" src="graphics/7-audi-animation.gif">
             </a>
           </div>
           <div class="projectSix" id="project-six">
-            <a href="/passion-project.html">
+            <a href="./passion-project.html">
               <img class="gif6 selectable" src="graphics/8-passion-project-animation.gif">
             </a>
           </div>
           <div class="projectSeven" id="project-seven">
-            <a href="/odds-ends.html">
+            <a href="./odds-ends.html">
               <img class="gif7 selectable" src="graphics/9-extras-redone-animation.gif">
             </a>
           </div>
@@ -102,7 +123,7 @@
 
 
     <script src="app.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   </body>
 
   </html>
