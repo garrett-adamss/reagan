@@ -246,20 +246,34 @@ body{
 
 #login {
   padding-top: 300px;
-  color: #000;
+  color: #fff;
   height: 100%;
+  font-size: 30px;
   width: 100%;
-  background: rgba(226, 226, 226, 0.94);
+  background: rgba(0, 0, 0, 0.94);
   position: absolute;
   z-index: 10000;
   text-align: center;
+  font-family: eloquent-jf-pro;
+  visibility: hidden;
 }
+
+#login input {
+  border: none;
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+}
+#login input:focus-visible{
+  outline: none;
+}
+
 #login #pswd {
   margin: 30px auto;
   text-align: center;
   width: 300px;
   background: #fff;
 }
+
 
 /* .watermark{
   position: absolute;
@@ -276,6 +290,8 @@ body{
   background-color: rgb(174, 174, 174);
   color: black;
 } */
+
+
 
 @media only screen and (max-width: 900px) {
 
