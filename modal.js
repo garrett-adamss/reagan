@@ -6,11 +6,11 @@
 
 $( document ).ready(function() {
 
-
-
     //group 1
-    $('.groupOne').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+    $('.groupSeven').click(function(){
+        $('#popupSeven').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+        alert("vishu");
+        overflow: 'hidden';
         // $('#popupTitle').html()
     });
 
@@ -18,6 +18,7 @@ $( document ).ready(function() {
         $('.workBackgroundTemplate').removeClass('animated zoomIn');
         $('.workBackgroundTemplate').addClass('animated zoomOut');
         $('.workBackgroundTemplate').hide(300);
+        overflow: 'auto';
     });
 
     //group 2
@@ -33,7 +34,7 @@ $( document ).ready(function() {
     });
 
     //group 1
-    $('.groupOne').click(function(){
+    $('.groupThree').click(function(){
         $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
@@ -45,7 +46,7 @@ $( document ).ready(function() {
     });
 
     //group 1
-    $('.groupOne').click(function(){
+    $('.groupFour').click(function(){
         $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
@@ -57,8 +58,8 @@ $( document ).ready(function() {
     });
 
     //group 1
-    $('.groupOne').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+    $('.groupFive').click(function(){
+        $('#popupFive').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
 
@@ -69,8 +70,8 @@ $( document ).ready(function() {
     });
 
     //group 1
-    $('.groupOne').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+    $('.groupSix').click(function(){
+        $('#popupSix').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
 
@@ -81,8 +82,9 @@ $( document ).ready(function() {
     });
 
     //group 1
-    $('.groupOne').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+    $('.groupSeven').click(function(){
+        alert("vishuuuuu");
+        $('#popupSeven').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
 

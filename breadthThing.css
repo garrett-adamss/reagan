@@ -91,37 +91,37 @@ body{
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media only screen and (min-width: 640px){
+  .masonry {
+    columns: 300px;
+    column-gap: 1em;
+    margin-left: 6vh;
+    margin-right: 6vh;
+    /* // margin-1qbottom: 10vh; */
+
+  }
   .column {
-    flex: 50%;
-    max-width: 50%;
+    display: block;
+    margin-bottom: 1em;
+    overflow: auto;
+    cursor: pointer;
   }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 640px){
+  .masonry {
+    columns: 199px;
+    column-gap: 1em;
+    margin-bottom: 10vh;
+  }
   .column {
-    flex: 100%;
-    max-width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    overflow: auto;
+    cursor: pointer;
   }
 }
-
-
-
-
 
 .photoInGrid:hover{
   cursor: pointer;
