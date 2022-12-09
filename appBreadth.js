@@ -1,17 +1,17 @@
-// let hiddenTitle = document.getElementById("title");
-// let hiddenText = document.getElementById("text");
-// let popup = document.getElementById("popup");
+let hiddenTitle = document.getElementById("title");
+let hiddenText = document.getElementById("text");
+let popup = document.getElementById("popup");
 
-// let photos = document.querySelectorAll('.photoInGrid');
+let photos = document.querySelectorAll('.photoInGrid');
 
-// photos.forEach(photo => {
-//   photo.addEventListener('click', function handleClick(event) {
+photos.forEach(photo => {
+  photo.addEventListener('click', function handleClick(event) {
 
-//     // alert(photo.getAttribute('src'));
-//     // alert(popup.style);
-//     // @ts-ignore
-//     console.log(popup.style);
-//     // popup.style.visibility = 'visible';
+    // alert(photo.getAttribute('src'));
+    // alert(popup.style);
+    // @ts-ignore
+    console.log(popup.style);
+    // popup.style.visibility = 'visible';
     
-//   });
-// });
+  });
+});
