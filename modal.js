@@ -11,3 +11,14 @@ $( document ).ready(function() {
     });
 
 });
+
+$(window).load(function () {
+    $(function () {
+        if (!sessionStorage.getItem("runOnce")) {
+
+            // Your code goes here....
+
+            sessionStorage.setItem("runOnce", true);
+        }
+    });
+});

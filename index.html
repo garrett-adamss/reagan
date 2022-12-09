@@ -27,7 +27,7 @@
   <!-- https://getbootstrap.com/docs/5.2/components/modal/#how-it-works  -->
 
 
-  <body>
+  <body onload="onLoad()">
     <!--<img src="https://thiscatdoesnotexist.com">-->
     <!-- https://www.ledr.com/colours/white.jpg -->
 
@@ -35,13 +35,35 @@
     <!-- size =     gifX -->
     <!-- MAIN -->
     <script type="text/javascript">
+      function onLoad(){
+        
+        if (!sessionStorage.getItem("runOnce")) {
+            console.log("DUDE PLEASE");
+            alert("first time");
+            $("#login").css("visibility", "visible");
+        }
+      }
+
+
+      // $(window).load(function () {
+      //   alert("hello");
+      //   $(function () {
+      //     if (!sessionStorage.getItem("runOnce")) {
+      //       alert("first time");
+      //       $("#login").css("display", "visible");
+      //     }
+      //   });
+      // });
+
       function checkPswd() {
-        var confirmPassword = "test";
+        debugger
+        var confirmPassword = "say cheese";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
-          $("#login").css("display", "none");
+          $("#login").css("visibility", "hidden");
+          sessionStorage.setItem("runOnce", true);
         }
-        else{
+        else {
           alert("Password invalid");
         }
       }
@@ -51,7 +73,7 @@
         <label for="pswd">Enter your password: </label><br>
         <div>
           <input type="password" id="pswd">
-          <input type="button" value="Submit" class="submitButton" onclick="checkPswd();" />
+          <button onclick="checkPswd();" autofocus>Submit</button>
         </div>
       </form>
     </div>
@@ -115,7 +137,7 @@
       <div class=""></div>
       <div class="navbar">
         <a href="#Home" class="navbarItem">Home</a>
-        <a href="#about-me" class="navbarItem">About me</a>
+        <a href="./about-me.html" class="navbarItem">About me</a>
       </div>
     </nav>
 
@@ -123,7 +145,8 @@
 
 
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   </body>
 
   </html>
