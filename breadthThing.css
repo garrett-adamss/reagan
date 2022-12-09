@@ -93,35 +93,33 @@ body{
 /* Create four equal columns that sits next to each other */
 
 
-@media only screen and (min-width: 640px){
-  .masonry {
-    columns: 300px;
-    column-gap: 1em;
-    margin-left: 6vh;
-    margin-right: 6vh;
-    /* // margin-1qbottom: 10vh; */
-
+  @media only screen and (min-width: 640px){
+    .masonry {
+      columns: 300px;
+      column-gap: 1em;
+      margin-left: 6vh;
+      margin-right: 6vh;
+    }
+    .masonry img {
+        width: 30vw;
+        display: block;
+        margin-bottom: 1em;
+        overflow: auto;
+      }
   }
-  .column {
-    display: block;
-    margin-bottom: 1em;
-    overflow: auto;
-    cursor: pointer;
+  @media only screen and (max-width: 640px){
+    .masonry {
+      columns: 199px;
+      column-gap: 1em;
+      margin-bottom: 10vh;
+    }
+    .masonry img {
+      width: 100vw;
+      display: block;
+      margin-bottom: 1em;
+      overflow: auto;
+    }
   }
-}
-@media only screen and (max-width: 640px){
-  .masonry {
-    columns: 199px;
-    column-gap: 1em;
-    margin-bottom: 10vh;
-  }
-  .column {
-    display: block;
-    margin-bottom: 1em;
-    overflow: auto;
-    cursor: pointer;
-  }
-}
 
 .photoInGrid:hover{
   cursor: pointer;
