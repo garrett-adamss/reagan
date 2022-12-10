@@ -84,3 +84,23 @@ body{
   height: 80vh;
   width: 100%;
 }
+
+.picCaption{
+  margin: 0px 10px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.smaller{
+  width: 50%;
+}
+
+.lil-smaller{
+  width: 60%;
+}
+
+.bigger{
+  max-width: 100%;
+  width: 150%;
+}

@@ -7,9 +7,8 @@
 $( document ).ready(function() {
 
     //group 1
-    $('.groupSeven').click(function(){
-        $('#popupSeven').show().removeClass('animated zoomOut').addClass('animated zoomIn');
-        alert("vishu");
+    $('.groupOne').click(function(){
+        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         overflow: 'hidden';
         // $('#popupTitle').html()
     });
@@ -35,7 +34,7 @@ $( document ).ready(function() {
 
     //group 1
     $('.groupThree').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+        $('#popupThree').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
 
@@ -47,7 +46,7 @@ $( document ).ready(function() {
 
     //group 1
     $('.groupFour').click(function(){
-        $('#popupOne').show().removeClass('animated zoomOut').addClass('animated zoomIn');
+        $('#popupFour').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
 
@@ -83,7 +82,6 @@ $( document ).ready(function() {
 
     //group 1
     $('.groupSeven').click(function(){
-        alert("vishuuuuu");
         $('#popupSeven').show().removeClass('animated zoomOut').addClass('animated zoomIn');
         // $('#popupTitle').html()
     });
