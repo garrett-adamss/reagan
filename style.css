@@ -85,6 +85,16 @@ body{
   font-size: 17vw;
   font-family: eloquent-jf-pro;
 }
+
+.scrollDown{
+  line-height: 1;
+  margin-left: 6vw;
+  position: absolute;
+  top: 13vh;
+  font-size: 1vw;
+  font-family: eloquent-jf-pro;
+}
+
 /* SLIDE TWO */
 .projectZero{
   position: absolute;

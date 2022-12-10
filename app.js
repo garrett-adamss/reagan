@@ -1,6 +1,7 @@
 // Parallax Scroll ID's
 let aboutMe = document.getElementById('about-me')
 let title = document.getElementById('title')
+let scrollRight = document.getElementById('scrollRight')
 
 let projectZero = document.getElementById('project-zero')
 let projectOne = document.getElementById('project-one')
@@ -26,6 +27,9 @@ outerWrapper.onscroll = function() {
 
   // @ts-ignore
   aboutMe.style.left = (-(widthValue * .3) + 70 )+ 'vw';
+
+  // @ts-ignore
+  scrollRight.style.left = (-(widthValue * 1.3) ) + 'vw';
 
  // @ts-ignore
   if(widthValue <= 83.6){
