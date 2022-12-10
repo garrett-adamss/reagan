@@ -63,8 +63,7 @@ body{
 }
 
 .selectable:hover{
-  transform
-  : translateY(-10px);
+  transform: translateY(-10px);
   cursor: pointer;
 }
 
