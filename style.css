@@ -365,7 +365,7 @@ body{
   
   .projectTwo{
     position: absolute;
-    top: -4vh;
+    top: 0vh;
     left: 100vw;
     margin-left: 220px;
   }
