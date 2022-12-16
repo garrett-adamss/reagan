@@ -40,7 +40,7 @@ body{
 
 /* SLIDES */
 .slide{
-  background: rgb(9, 9, 9);
+  /* background: rgb(9, 9, 9); */
   /* background: #28324D; */
   width: 167vw;
   height: 100vh;
@@ -49,7 +49,7 @@ body{
   position: relative;
 }
 .slide3{
-  background: rgb(9, 9, 9);
+  /* background: rgb(9, 9, 9); */
   /* background: #28324D; */
   width: 45vw;
   height: 100vh;
@@ -58,9 +58,14 @@ body{
   position: relative;
 }
 
-.selectable{
+.selectable{ /* For selectable project page thumbnails*/
   transition: transform 250ms;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
+
+
 
 .selectable:hover{
   transform: translateY(-10px);
@@ -80,10 +85,14 @@ body{
 .nameTitleFirstPage{
   line-height: 1;
   margin-left: 6vw;
-  position: absolute;
+  position: fixed;
+  left: 0;;
   top: 23vh;
   font-size: 17vw;
   font-family: eloquent-jf-pro;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .scrollDown{
@@ -93,6 +102,9 @@ body{
   top: 13vh;
   font-size: 1vw;
   font-family: eloquent-jf-pro;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* SLIDE TWO */
@@ -302,7 +314,20 @@ body{
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
+
+  .nameTitleFirstPage{
+    line-height: 1;
+    margin-left: 6vw;
+    position: fixed;
+    left: 0;
+    top: 45vh;
+    font-size: 17vw;
+    font-family: eloquent-jf-pro;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 
   .testbox{
     width: 50vw;
@@ -310,52 +335,96 @@ body{
   }
   .aboutMe{
     position: absolute;
-    top: 50vh;
+    bottom: 0px;
+    width: 70vw;
+    margin-left: -50px;
   }
+
+
+  .projectZero {
+    position: absolute;
+    top: 2vh;
+    left: -76vw;
+    margin-left: 100px;
+    z-index: 1000;
+}
+
+.gif0 {
+  width: 37vw;
+}
   
   .projectOne{
     position: absolute;
-    top:15vh;
+    top: 50vh;
+    margin-left: 170px;
     left: 50vw;
   }
+  .gif1 {
+    width: 130vw;
+}
   
   .projectTwo{
     position: absolute;
-    top: 0vh;
-    bottom: 0vh;
+    top: -4vh;
     left: 100vw;
+    margin-left: 220px;
   }
+  .gif2 {
+    width: 190vw;
+}
   
   .projectThree{
     position: absolute;
-    top: 15vh;
-    left: 150vw;
+    height: fit-content;
+    top: 40vh;
+    margin-left: 500px;
   }
+  .gif3 {
+    width: 80vw;
+}
   
   .projectFour{
     position: absolute;
     top: 0vh;
     bottom: 0vh;
     left: 175vw;
+    margin-left: 570px;
   }
+  .gif4 {
+    height: 80vh;
+}
   
   .projectFive{
     position: absolute;
     bottom: 0vh;
     left: 200vw;
+    margin-left: 900px;
   }
+
+  .gif5 {
+    width: 140vw;
+}
+
   /* SLIDE THREE */
   .projectSix{
     position: absolute;
-    top: 47vh;
+    top: 12vh;
     /* left: 100vw; */
+    margin-left: 1150px;
   }
+  .gif6 {
+    width: 80vw;
+}
   
   .projectSeven{
     position: absolute;
     top: 26vh;
     /* left: 150vw; */
+    margin-left: 1400px;
   }
+  .gif7 {
+    height: 80vh;
+}
   
   .contact{
     position: absolute;
