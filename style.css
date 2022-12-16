@@ -313,8 +313,8 @@ body{
 } */
 
 
-
-@media only screen and (max-width: 400px) {
+/* aspect ratio: height/width */
+@media only screen and (max-aspect-ratio: 3/2) {
 
   .nameTitleFirstPage{
     line-height: 1;
