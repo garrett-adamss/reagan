@@ -126,7 +126,7 @@ body{
 
 .projectOne{
   position: absolute;
-  bottom: -35vh;
+  /* bottom: -35vh; */
   z-index: 10000;
 }
 
@@ -135,35 +135,46 @@ body{
 }
 
 .projectTwo{
-  position: absolute;
-  top: -40vh;
+
+  margin: auto;
+    position: absolute;
+    display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-left: 120px;
+
 }
 
 .gif2{
   width: 90vw;
-
+  
 }
 
 .projectThree{
   position: absolute;
-  top: 22vh;
-  z-index: 10000;
+    /* top: 22vh; */
+    z-index: 10000;
+    display: flex;
+    align-items: end;
+    height: 100vh;
 }
 
 .gif3{
   width: 40vw;
+  max-width: 40vh;
 
 }
 
 .projectFour{
   position: absolute;
-  top: 0;
-  bottom: 0;
+  display: flex;
+    align-items: center;
+    height: 100vh;
   left: 175vw;
 }
 
 .gif4{
-  height: 80vh;
+  height: 95vh;
 
 }
 
@@ -175,7 +186,7 @@ body{
 }
 
 .gif5{
-  width: 73vw;
+  width: 63vw;
 
 }
 
@@ -390,10 +401,11 @@ body{
   
   .projectFour{
     position: absolute;
-    top: 0vh;
-    bottom: 0vh;
+    top: 0;
+    bottom: 0;
+    display: flex;
     left: 175vw;
-    margin-left: 570px;
+    align-items: center;
   }
   .gif4 {
     height: 80vh;
