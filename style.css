@@ -15,7 +15,7 @@ body{
   padding: 0;
   scroll-behavior: smooth;
   background-color: black;
-  overflow-y: hidden;
+  
 }
 
 .wrapper{
@@ -24,15 +24,14 @@ body{
   width: 379vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  overflow-y: hidden;
 } 
 
 .outer-wrapper {
-  width: 90vh;
+  width: 100vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
@@ -331,7 +330,6 @@ body{
 
 /* aspect ratio: height/width */
 @media only screen and (max-aspect-ratio: 9/13) {
-  
   
 
   .nameTitleFirstPage{
