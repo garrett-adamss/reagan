@@ -359,7 +359,7 @@ body{
 
   .projectZero {
     position: absolute;
-    top: 2vh;
+    top: 10vh;
     left: -76vw;
     margin-left: 100px;
     z-index: 1000;
@@ -381,7 +381,7 @@ body{
   
   .projectTwo{
     position: absolute;
-    top: 0vh;
+    top: 10vh;
     left: 100vw;
     margin-left: 220px;
   }
