@@ -29,7 +29,6 @@ body{
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
-  min-height: -webkit-fill-available;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
@@ -331,6 +330,7 @@ body{
 
 /* aspect ratio: height/width */
 @media only screen and (max-aspect-ratio: 9/13) {
+  
 
   .nameTitleFirstPage{
     line-height: 1;
@@ -406,6 +406,7 @@ body{
     display: flex;
     left: 175vw;
     align-items: center;
+    margin-left: 600px;
   }
   .gif4 {
     height: 80vh;
