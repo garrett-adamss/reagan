@@ -332,6 +332,17 @@ body{
 /* aspect ratio: height/width */
 @media only screen and (max-aspect-ratio: 9/13) {
   
+  .outer-wrapper {
+    width: 70vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
   .nameTitleFirstPage{
     line-height: 1;
