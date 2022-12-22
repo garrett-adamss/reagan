@@ -15,7 +15,7 @@ body{
   padding: 0;
   scroll-behavior: smooth;
   background-color: black;
-
+  overflow-y: hidden;
 }
 
 .wrapper{
@@ -24,6 +24,7 @@ body{
   width: 379vw;   /*needs to equal the width of the content or all slides combined   */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  overflow-y: hidden;
 } 
 
 .outer-wrapper {
@@ -31,7 +32,7 @@ body{
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
