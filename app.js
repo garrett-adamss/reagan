@@ -18,6 +18,9 @@ let mobileWidth = window.innerWidth
 
 let outerWrapper = document.querySelector(".outer-wrapper");
 
+//scroll to bottom of page automatically
+  window.scrollTo(0, document.body.scrollHeight);
+
 //Parallax Scroll Function
 // @ts-ignore
 outerWrapper.onscroll = function() {
